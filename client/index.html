@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232D2A26'><path d='M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASKFLOW | Creative Writer's Hub & Digital Journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'Georgia', 'serif'],
+              display: ['"Cinzel"', '"Playfair Display"', 'serif'],
+              sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              paper: {
+                DEFAULT: '#FAF8F5',
+                darker: '#F2EFE9',
+                light: '#FCFBF9',
+              },
+              ink: {
+                DEFAULT: '#262422',
+                muted: '#68645E',
+                light: '#9E9A92',
+              },
+              slateBlue: {
+                DEFAULT: '#CCD6DE',
+                dark: '#2A3C4D',
+                card: '#CFD9E1',
+              },
+              cardPastel: {
+                ivory: '#EBE7DE',
+                cream: '#F4F1EA',
+                sand: '#E5D6C3',
+                sage: '#DFE5DF',
+                dark: '#283845',
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-[#F0EDE8] text-[#262422] antialiased selection:bg-[#2A3C4D] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

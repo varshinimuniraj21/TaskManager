@@ -1,0 +1,15 @@
+{
+  "name": "taskflow-week3-mern",
+  "version": "1.0.0",
+  "description": "TASKFLOW - Full Stack Blueprint-Based MERN Task Manager",
+  "scripts": {
+    "server": "node server/server.js",
+    "client": "npm run dev --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "test": "node server/test.js"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
